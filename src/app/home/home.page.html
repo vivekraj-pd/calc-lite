@@ -1,13 +1,13 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
       Blank
     </ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
@@ -16,5 +16,83 @@
   <div id="container">
     <strong>Ready to create an app?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div> -->
+  <div class="main-flex-container">
+    <div class="input">
+      <textarea [ngModel]="displayNumber"></textarea>
+    </div>
+    <div class="btn-main-container">
+      <div class="main-item">
+        <div class="btn acBtn" (click)="reset()">
+          <div>AC</div>
+        </div>
+        <div class="btn opBtn">
+          <div>()</div>
+        </div>
+        <div class="btn opBtn">
+          <div>%</div>
+        </div>
+        <div class="btn opBtn">
+          <div>÷</div>
+        </div>
+      </div>
+      <div class="main-item">
+        <div class="btn numBtn" (click)="num(7)">
+          <div>7</div>
+        </div>
+        <div class="btn numBtn" (click)="num(8)">
+          <div>8</div>
+        </div>
+        <div class="btn numBtn" (click)="num(9)">
+          <div>9</div>
+        </div>
+        <div class="btn opBtn">
+          <div>X</div>
+        </div>
+      </div>
+      <div class="main-item">
+        <div class="btn numBtn" (click)="num(4)">
+          <div>4</div>
+        </div>
+        <div class="btn numBtn" (click)="num(5)">
+          <div>5</div>
+        </div>
+        <div class="btn numBtn" (click)="num(6)">
+          <div>6</div>
+        </div>
+        <div class="btn opBtn">
+          <div>-</div>
+        </div>
+      </div>
+      <div class="main-item">
+        <div class="btn numBtn" (click)="num(1)">
+          <div >1</div>
+        </div>
+        <div class="btn numBtn" (click)="num(2)">
+          <div>2</div>
+        </div>
+        <div class="btn numBtn" (click)="num(3)">
+          <div>3</div>
+        </div>
+        <div class="btn opBtn" (click)="add()">
+          <div>+</div>
+        </div>
+      </div>
+      <div class="main-item">
+        <div class="btn numBtn" (click)="num(0)">
+          <div>0</div>
+        </div>
+        <div class="btn numBtn" (click)="num('.')">
+          <div>.</div>
+        </div>
+        <div class="btn numBtn" (click)="del()">
+          <div>x</div>
+        </div>
+        <div class="btn equalBtn" (click)="equals()">
+          <div>=</div>
+        </div>
+      </div>
+    </div>
   </div>
+
 </ion-content>
